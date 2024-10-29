@@ -1,0 +1,6 @@
+WHITESPACE = _{ " " | "\t" | "\n" }
+field = { number }
+number = { negative_sign? ~ integer ~ fraction? }
+negative_sign = { "-" }
+integer = { ASCII_DIGIT+ }
+fraction = { "." ~ ASCII_DIGIT+ }
